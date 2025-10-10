@@ -314,5 +314,5 @@ export {
     compare,
     rules,
     defaultRules,
-    createComparison
+    createComparison,
 };
