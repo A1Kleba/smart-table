@@ -1,8 +1,6 @@
 import "./fonts/ys-display/fonts.css";
 import "./style.css";
 
-import { data as sourceData } from "./data/dataset_1.js";
-
 import { initData } from "./data.js";
 import { processFormData } from "./lib/utils.js";
 
@@ -87,7 +85,7 @@ const { applyFiltering, updateIndexes } = initFiltering(
     sampleTable.filter.elements
 );
 
-const applySearching = initSearching(search, {});
+const applySearching = initSearching("search");
 
 const appRoot = document.querySelector("#app");
 appRoot.appendChild(sampleTable.container);
